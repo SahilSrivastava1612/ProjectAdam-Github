@@ -23,7 +23,7 @@ module "azurerm_subnet" {
 
 module "azurerm_ms_sql_server" {
   depends_on  = [module.azurerm_key_vault, module.azurerm_resource_group]
-  source      = "../Project-A_Infra_modules/azurerm_sql_server"
+  source      = "..//Project-A_Infra_modules/azurerm_sql_server"
   sql_servers = var.sql_server
 }
 

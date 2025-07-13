@@ -5,6 +5,12 @@ terraform {
       version = "4.34.0"
     }
   }
+  backend "azurerm" {
+    resource_group_name  = "rg-prod-000a1"
+    storage_account_name = "staccstate001"
+    container_name       = "statelock"
+    key                  = "terraform.tfstate"
+  }
 }
 
 provider "azurerm" {
