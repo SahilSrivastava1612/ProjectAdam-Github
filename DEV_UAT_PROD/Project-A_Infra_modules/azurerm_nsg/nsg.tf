@@ -1,7 +1,7 @@
 resource "azurerm_network_security_group" "nsgblock" {   #creating NSG hardcoded for a reason
     name = "todonsg1"
     location = "South Africa North"
-    resource_group_name = "rg-prod-000a1"
+    resource_group_name = "rg-prod-000a2"
 
     security_rule {
         name                       = "AllowHTTPSSH"
