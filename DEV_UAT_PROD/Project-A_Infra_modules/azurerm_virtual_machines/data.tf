@@ -31,6 +31,6 @@ data "azurerm_subnet" "datasubnetblock1" {
 
 data "azurerm_subnet" "datasubnetblock2" {
     resource_group_name = "rg-dev-0001"
-    name = "subnet-prod-backend-1"
+    name = "subnet-dev-backend-1"
     virtual_network_name = "vnet-dev-0001"
 }
