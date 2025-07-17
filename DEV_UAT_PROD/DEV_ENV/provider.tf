@@ -2,19 +2,19 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "4.34.0"
+      version = "4.36.0"
     }
   }
   backend "azurerm" {
-    resource_group_name  = "rg-prod-000a1"
-    storage_account_name = "staccstate001"
+    resource_group_name  = "rg-dev-0001a"
+    storage_account_name = "staccstatelockdev001"
     container_name       = "statelock"
-    key                  = "terraform.tfstate"
+    key                  = "DEV_terraform.tfstate"
   }
 }
 
 provider "azurerm" {
   features {
   }
-  subscription_id = "4a8882d8-040a-43b9-81c8-844e324752c0"
+  subscription_id = "16a05a8e-7ba4-486d-8521-57e717aedbbd"
 }

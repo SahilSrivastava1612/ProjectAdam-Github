@@ -1,4 +1,4 @@
-module "azurerm_resource_group" {     #RG
+module "azurerm_resource_group" {    
   source          = "../Project-A_Infra_modules/azurerm_resource_group"
   resource_groups = var.resource_group
 }

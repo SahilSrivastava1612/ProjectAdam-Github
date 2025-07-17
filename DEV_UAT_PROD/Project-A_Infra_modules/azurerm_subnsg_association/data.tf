@@ -1,16 +1,16 @@
 data "azurerm_subnet" "datasubnetblock1" {
-    resource_group_name = "rg-prod-000a2"
-    name = "subnet-prod-frontend-1"
-    virtual_network_name = "vnet-prod-000a1"
+    resource_group_name = "rg-dev-0001"
+    name = "subnet-dev-frontend-1"
+    virtual_network_name = "vnet-dev-0001"
 }
 
 data "azurerm_subnet" "datasubnetblock2" {
-    resource_group_name = "rg-prod-000a2"
-    name = "subnet-prod-backend-1"
-    virtual_network_name = "vnet-prod-000a1"
+    resource_group_name = "rg-dev-0001"
+    name = "subnet-dev-backend-1"
+    virtual_network_name = "vnet-dev-0001"
 }
 
 data "azurerm_network_security_group" "datansgblock1" {
-    name = "todonsg1"
-    resource_group_name = "rg-prod-000a2"
+    name = "tododevnsg1"
+    resource_group_name = "rg-prod-0001"
 }

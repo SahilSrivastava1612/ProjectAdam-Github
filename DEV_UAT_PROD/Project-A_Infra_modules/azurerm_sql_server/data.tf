@@ -1,6 +1,6 @@
 data "azurerm_key_vault" "kvblock" {
-  name                = "kv-prod-000a1"
-  resource_group_name = "rg-prod-000a1"
+  name                = "kv-dev-0001a"
+  resource_group_name = "rg-dev-0001a"
 }
 
 data "azurerm_key_vault_secret" "kvsecretblock" {
