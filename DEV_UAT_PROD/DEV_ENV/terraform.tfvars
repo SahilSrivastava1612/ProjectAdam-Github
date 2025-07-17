@@ -4,7 +4,7 @@ resource_group = {
 # Creating 2nd Conflict
 key_vault = {    
   kv-dev-0001 = {
-    name                = "kv-dev-0001"
+    name                = "kv-dev-0001abd"
     resource_group_name = "rg-dev-0001"
     location            = "South Africa North"
     sku_name            = "standard"
