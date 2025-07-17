@@ -12,5 +12,5 @@ data "azurerm_subnet" "datasubnetblock2" {
 
 data "azurerm_network_security_group" "datansgblock1" {
     name = "tododevnsg1"
-    resource_group_name = "rg-prod-0001"
+    resource_group_name = "rg-dev-0001"
 }
