@@ -2,7 +2,7 @@ resource "azurerm_network_interface" "nicblock1" {
     
     name = "nic-vm1"
     location = "South Africa North"
-    resource_group_name = "rg-prod-000a2"
+    resource_group_name = "rg-dev-0001"
     
     ip_configuration {
       name = "internal"
@@ -15,7 +15,7 @@ resource "azurerm_network_interface" "nicblock1" {
 resource "azurerm_network_interface" "nicblock2" {
     name = "nic-vm2"
     location = "South Africa North"
-    resource_group_name = "rg-prod-000a2"
+    resource_group_name = "rg-dev-0001"
     
     ip_configuration {
       name = "internal"

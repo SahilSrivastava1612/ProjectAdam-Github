@@ -1,11 +1,11 @@
-resource "azurerm_network_security_group" "nsgblock" {   #creating NSG hardcoded for a reason
-    name = "todonsg1"
+resource "azurerm_network_security_group" "nsgblock" {  
+    name = "tododevnsg1"
     location = "South Africa North"
-    resource_group_name = "rg-prod-000a2"
+    resource_group_name = "rg-dev-0001"
 
     security_rule {
         name                       = "AllowHTTPSSH"
-        priority                   = 100
+        priority                   = 101
         direction                  = "Inbound"
         access                     = "Allow"
         protocol                   = "Tcp"
